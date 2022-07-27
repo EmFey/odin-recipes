@@ -9,3 +9,7 @@ ul, ol, li, a{
     padding: 10px;
     border-radius: 20px;
 }
+img{
+    width: 99%;
+    height: auto;
+}
