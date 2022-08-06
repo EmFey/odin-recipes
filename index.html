@@ -9,6 +9,25 @@
 </head>
 <body>
     <h1 id="mainHeading">Odin Recipes</h1>
+    <label for="theme">Select theme: </label>
+    <select id="theme">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+    </select>
+    <script>
+        const select = document.querySelector('select');
+        const html = document.querySelector('html');
+
+        function update(bgColor, textColor) {
+            html.style.backgroundColor = bgColor;
+            html.style.color = textColor;
+        }
+
+        select.addEventListener('change', () => select.value === 'black'
+            ? update('#222222', 'wheat')
+            : update('#aaaaaa', 'black')
+        );
+    </script>
 
     <ul>
         <li><a href="recipes/ramen.html">Shoyu Miso Ramen</a></li>
