@@ -9,6 +9,28 @@
 </head>
 <body>
     <h1>Celerita</h1>
+    <label for="theme">Select theme: </label>
+    <select id="theme">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+    </select>
+    <script>
+        const select = document.querySelector('select');
+        const html = document.querySelector('html');
+
+        function update(bgColor, textColor) {
+            html.style.backgroundColor = bgColor;
+            html.style.color = textColor;
+        }
+
+        select.addEventListener('change', () => select.value === 'black'
+            ? update('#222222', 'wheat') : update('white', 'black')
+        );
+    </script>
+    <ul>
+        <li><a href="ramen.html">Shoyu Miso Ramen</a></li>
+        <li><a href="guacamole-burger.html">Guacamole Turkey Burger</a></li>
+    </ul>
     <img src="Celerita.png" alt="The finished Celerita">
     <h3>Description</h3>
     <p>Turn flavored bubbly water or hard seltzer into a cocktail for two in no time flat with this easy recipe. Garnish this with salt and chipotle pepper or Hatch chile powder on the rim and a leafy celery stalk.</p>

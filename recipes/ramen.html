@@ -9,6 +9,28 @@
 </head>
 <body>
     <h1>Shoyu Miso Ramen</h1>
+    <label for="theme">Select theme: </label>
+    <select id="theme">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+    </select>
+    <script>
+        const select = document.querySelector('select');
+        const html = document.querySelector('html');
+
+        function update(bgColor, textColor) {
+            html.style.backgroundColor = bgColor;
+            html.style.color = textColor;
+        }
+
+        select.addEventListener('change', () => select.value === 'black'
+            ? update('#222222', 'wheat') : update('white', 'black')
+        );
+    </script>
+    <ul>
+        <li><a href="guacamole-burger.html">Guacamole Turkey Burger</a></li>
+        <li><a href="celerita.html">Celerita</a></li>
+    </ul>
     <img src="ShoyuMiso-Ramen.png" alt="The finished Shoyu Miso Ramen meal">
     <h3>Description</h3>
     <p>Miso Ramen is one of three types of tare (seasoning) used to flavor ramen both in Japan—the other two are shio (salt) and shoyu (soy sauce). Miso is a popular dish and is very traditional. I came accross this recipe because of a famous chef called Ichiraku. He owns the most legendary ramen store. The recipe consists of soy sauce, brown suger, butchers twine, eggs and Naruto. Do you get it;)</p>

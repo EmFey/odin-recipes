@@ -9,6 +9,28 @@
 </head>
 <body>
     <h1>Guacamole Turkey Burger</h1>
+    <label for="theme">Select theme: </label>
+    <select id="theme">
+        <option value="white">White</option>
+        <option value="black">Black</option>
+    </select>
+    <script>
+        const select = document.querySelector('select');
+        const html = document.querySelector('html');
+
+        function update(bgColor, textColor) {
+            html.style.backgroundColor = bgColor;
+            html.style.color = textColor;
+        }
+
+        select.addEventListener('change', () => select.value === 'black'
+            ? update('#222222', 'wheat') : update('white', 'black')
+        );
+    </script>
+    <ul>
+        <li><a href="ramen.html">Shoyu Miso Ramen</a></li>
+        <li><a href="celerita.html">Celerita</a></li>
+    </ul>
     <img src="guacamole.png" alt="The finished Guacamole-burger">
     <h3>Description</h3>
     <p>Juicy turkey burgers topped with freshly made pico de gallo, pepper jack cheese and a healthy dose of guacamole! Now this one is a must try</p>
