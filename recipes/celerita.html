@@ -9,18 +9,22 @@
 </head>
 <body>
     <div class="header">
-        <h1>Celerita</h1>
-        <label for="theme">Select theme: </label>
-        <select id="theme">
-            <option value="white">White</option>
-            <option value="black">Black</option>
-        </select>
+        <div>
+            <label for="theme">Select theme: </label>
+        </div>
+        <div>
+            <h1>Celerita</h1>
+            <select id="theme">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+            </select>
+        </div>
     </div>
     <div class="nav">
-        <ul>
-            <li><a href="ramen.html">Shoyu Miso Ramen</a></li>
-            <li><a href="guacamole-burger.html">Guacamole Turkey Burger</a></li>
-        </ul>
+        <nav>
+            <a href="ramen.html">Shoyu Miso Ramen</a>
+            <a href="guacamole-burger.html">Guacamole Turkey Burger</a>
+        </nav>
     </div>
 
     <div class="main">
@@ -57,9 +61,7 @@
             html.style.color = textColor;
         }
 
-        select.addEventListener('change', () => select.value === 'black'
-            ? update('#222222', 'wheat') : update('white', 'black')
-        );
+        select.addEventListener('change', () => select.value === 'black' ? update('#222222', 'wheat') : update('white', 'black'));
     </script>
 </body>
 </html>

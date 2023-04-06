@@ -9,19 +9,23 @@
 </head>
 <body>
     <div class="header">
-        <h1>Guacamole Turkey Burger</h1>
-        <label for="theme">Select theme: </label>
-        <select id="theme">
-            <option value="white">White</option>
-            <option value="black">Black</option>
-        </select>
+        <div>
+            <h1>Guacamole Turkey Burger</h1>
+        </div>
+        <div>
+            <label for="theme">Select theme: </label>
+            <select id="theme">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+            </select>
+        </div>
     </div>
 
     <div class="nav">
-        <ul>
-            <li><a href="ramen.html">Shoyu Miso Ramen</a></li>
-            <li><a href="celerita.html">Celerita</a></li>
-        </ul>
+        <nav>
+            <a href="ramen.html">Shoyu Miso Ramen</a>
+            <a href="celerita.html">Celerita</a>
+        </nav>
     </div>
 
     <div class="main">
@@ -66,7 +70,7 @@
     <div class="footer">
         <a href="../index.html">Home</a>
     </div>
-    
+
     <script>
         const select = document.querySelector('select');
         const html = document.querySelector('html');
@@ -76,9 +80,7 @@
             html.style.color = textColor;
         }
 
-        select.addEventListener('change', () => select.value === 'black'
-            ? update('#222222', 'wheat') : update('white', 'black')
-        );
+        select.addEventListener('change', () => select.value === 'black' ? update('#222222', 'wheat') : update('white', 'black'));
     </script>
 </body>
 </html>
