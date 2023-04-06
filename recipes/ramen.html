@@ -8,12 +8,66 @@
     <title>Ramen recipe</title>
 </head>
 <body>
-    <h1>Shoyu Miso Ramen</h1>
-    <label for="theme">Select theme: </label>
-    <select id="theme">
-        <option value="white">White</option>
-        <option value="black">Black</option>
-    </select>
+
+    <div class="header">
+        <h1>Shoyu Miso Ramen</h1>
+        <label for="theme">Select theme: </label>
+        <select id="theme">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+        </select>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="guacamole-burger.html">Guacamole Turkey Burger</a></li>
+            <li><a href="celerita.html">Celerita</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <img src="ShoyuMiso-Ramen.png" alt="The finished Shoyu Miso Ramen meal">
+        <h3>Description</h3>
+        <p>Miso Ramen is one of three types of tare (seasoning) used to flavor ramen both in Japan—the other two are shio (salt) and shoyu (soy sauce). Miso is a popular dish and is very traditional. I came accross this recipe because of a famous chef called Ichiraku. He owns the most legendary ramen store. The recipe consists of soy sauce, brown suger, butchers twine, eggs and Naruto. Do you get it;)</p>
+        <h3>Ingredients</h3>
+        <ul>
+            <li>¼ cup dried black fungus</li>
+            <li>2 cups mirin</li>
+            <li>1¼ cups soy sauce, divided</li>
+            <li>½ cup brown sugar</li>
+            <li>6 green onion bulbs, chopped, divided</li>
+            <li>½ onion, coarsely chopped</li>
+            <li>6 cloves garlic, peeled</li>
+            <li>2 pounds skin-on, boneless pork belly</li>
+            <li>butcher's twine</li>
+            <li>4 eggs</li>
+            <li>2 tablespoons brown sugar</li>
+            <li>½ cup miso paste</li>
+            <li>4 (3 ounce) packages ramen noodles, or to taste</li>
+            <li>4 sheets nori (dry seaweed), quartered</li>
+            <li>1 naruto (fish paste stick with a red spiral pattern). sliced</li>
+        </ul>
+        <h3>Steps</h3>
+        <ol>
+            <li>Preheat the oven to 275 degrees F (135 degrees C).</li>
+            <li>Place black fungus in a large bowl and fill with water.</li>
+            <li>Combine mirin, 1/2 cup soy sauce, 1/2 cup brown sugar, 3 green onion bulbs, chopped onion, and garlic in an oven-safe pot over high heat. Bring to a boil.</li>
+            <li>Place pork belly skin-side down on a flat work surface. Roll up lengthwise and wrap with butcher's twine. Place pork belly in the pot with the mirin mixture and partially cover with a lid.</li>
+            <li>Bake in the preheated oven until pork is tender and an instant-read thermometer inserted into the center reads at least 145 degrees F (63 degrees C), about 4 hours.</li>
+            <li>Bring a separate pot of water to a boil over high heat. Gently place eggs in the pot and cook until yolks are barely set, 8 to 10 minutes. Transfer eggs to a bowl filled with ice water. Let sit, about 1 minute. Remove from water and peel eggs.</li>
+            <li>Place eggs in a container with 1 cup water, 1/2 cup soy sauce, and 2 tablespoons brown sugar. Dampen a paper towel in the mixture and use it to cover the container. Refrigerate 4 hours to overnight.</li>
+            <li>Drain the fungus and add to the liquid in the pot with the pork belly. Cover with a lid and refrigerate, 4 hours to overnight.</li>
+            <li>Skim fungus from the top of the pork belly mixture and place in a pot with 8 cups water; fungus should be covered in pork belly fat. Add 1/4 cup soy sauce and miso paste. Bring to a boil.</li>
+            <li>Remove skin from the pork belly using a knife. Chop the meat into pieces of desired thickness. Cut eggs in half lengthwise.</li>
+            <li>Bring a separate pot of water to a boil. Cook ramen in boiling water, stirring occasionally, until noodles are tender, yet firm to the bite, about 3 minutes. Drain.</li>
+            <li>Place 4 slices of nori diagonally in the corner of each bowl. Place noodles on top; arrange 2 egg halves and a few pork belly slices in separate corners. Cover with black fungus, top with green onions, and pour in broth. Top each bowl with a few slices of naruto. Let sit, about 3 minutes, before serving.</li>
+        </ol>
+    </div>
+
+    <div class="footer">
+        <a href="../index.html">Home</a><a href="../index.html">Home</a>
+    </div>
+
     <script>
         const select = document.querySelector('select');
         const html = document.querySelector('html');
@@ -27,46 +81,5 @@
             ? update('#222222', 'wheat') : update('white', 'black')
         );
     </script>
-    <ul>
-        <li><a href="guacamole-burger.html">Guacamole Turkey Burger</a></li>
-        <li><a href="celerita.html">Celerita</a></li>
-    </ul>
-    <img src="ShoyuMiso-Ramen.png" alt="The finished Shoyu Miso Ramen meal">
-    <h3>Description</h3>
-    <p>Miso Ramen is one of three types of tare (seasoning) used to flavor ramen both in Japan—the other two are shio (salt) and shoyu (soy sauce). Miso is a popular dish and is very traditional. I came accross this recipe because of a famous chef called Ichiraku. He owns the most legendary ramen store. The recipe consists of soy sauce, brown suger, butchers twine, eggs and Naruto. Do you get it;)</p>
-    <h3>Ingredients</h3>
-    <ul>
-        <li>¼ cup dried black fungus</li>
-        <li>2 cups mirin</li>
-        <li>1¼ cups soy sauce, divided</li>
-        <li>½ cup brown sugar</li>
-        <li>6 green onion bulbs, chopped, divided</li>
-        <li>½ onion, coarsely chopped</li>
-        <li>6 cloves garlic, peeled</li>
-        <li>2 pounds skin-on, boneless pork belly</li>
-        <li>butcher's twine</li>
-        <li>4 eggs</li>
-        <li>2 tablespoons brown sugar</li>
-        <li>½ cup miso paste</li>
-        <li>4 (3 ounce) packages ramen noodles, or to taste</li>
-        <li>4 sheets nori (dry seaweed), quartered</li>
-        <li>1 naruto (fish paste stick with a red spiral pattern). sliced</li>
-    </ul>
-    <h3>Steps</h3>
-    <ol>
-        <li>Preheat the oven to 275 degrees F (135 degrees C).</li>
-        <li>Place black fungus in a large bowl and fill with water.</li>
-        <li>Combine mirin, 1/2 cup soy sauce, 1/2 cup brown sugar, 3 green onion bulbs, chopped onion, and garlic in an oven-safe pot over high heat. Bring to a boil.</li>
-        <li>Place pork belly skin-side down on a flat work surface. Roll up lengthwise and wrap with butcher's twine. Place pork belly in the pot with the mirin mixture and partially cover with a lid.</li>
-        <li>Bake in the preheated oven until pork is tender and an instant-read thermometer inserted into the center reads at least 145 degrees F (63 degrees C), about 4 hours.</li>
-        <li>Bring a separate pot of water to a boil over high heat. Gently place eggs in the pot and cook until yolks are barely set, 8 to 10 minutes. Transfer eggs to a bowl filled with ice water. Let sit, about 1 minute. Remove from water and peel eggs.</li>
-        <li>Place eggs in a container with 1 cup water, 1/2 cup soy sauce, and 2 tablespoons brown sugar. Dampen a paper towel in the mixture and use it to cover the container. Refrigerate 4 hours to overnight.</li>
-        <li>Drain the fungus and add to the liquid in the pot with the pork belly. Cover with a lid and refrigerate, 4 hours to overnight.</li>
-        <li>Skim fungus from the top of the pork belly mixture and place in a pot with 8 cups water; fungus should be covered in pork belly fat. Add 1/4 cup soy sauce and miso paste. Bring to a boil.</li>
-        <li>Remove skin from the pork belly using a knife. Chop the meat into pieces of desired thickness. Cut eggs in half lengthwise.</li>
-        <li>Bring a separate pot of water to a boil. Cook ramen in boiling water, stirring occasionally, until noodles are tender, yet firm to the bite, about 3 minutes. Drain.</li>
-        <li>Place 4 slices of nori diagonally in the corner of each bowl. Place noodles on top; arrange 2 egg halves and a few pork belly slices in separate corners. Cover with black fungus, top with green onions, and pour in broth. Top each bowl with a few slices of naruto. Let sit, about 3 minutes, before serving.</li>
-    </ol>
-    <a href="../index.html">Home</a>
 </body>
 </html>
