@@ -53,6 +53,16 @@ a:hover {
     padding: 10px;
 }
 
+.img-area {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 900px;
+    height: auto;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
