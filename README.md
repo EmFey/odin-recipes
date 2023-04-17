@@ -11,7 +11,7 @@ Beginning stages of web dev. Now that Ive learnt so much more, I can fix old mis
 
 ## Appendix
 
-This project is not done yet, no project is ever done
+This project is not done yet, no project is ever done, wink
 
 
 ## Authors
@@ -21,7 +21,7 @@ This project is not done yet, no project is ever done
 
 ## Lessons Learned
 
-To be edited
+Arranging the layout contents first and then you will be able to style later.
 
 ## LIVE
 https://emfey.github.io/odin-recipes/
