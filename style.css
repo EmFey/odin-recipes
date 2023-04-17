@@ -69,6 +69,7 @@ img {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     box-shadow: #00000040 0px 14px 28px, #00000038 0px 10px 10px;
+    margin: 10px;
 }
 
 .ingredients {
@@ -87,14 +88,14 @@ img {
     margin: 10px;
 }
 
-ul, ol {
+ul, ol, .description {
 	list-style-position: inside;
 	width: 600px;
 	max-width: 100%;
 	background: white;
 	box-shadow: #00000040 0px 14px 28px, #00000038 0px 10px 10px;
-	padding: 5;
-	margin: 5;
+	padding: 10px;
+	margin: 10px;
 	border-radius: 0.1rem;
 }
 
